@@ -1,0 +1,30 @@
+---
+
+jenkins_url: local.jenkins
+
+ntp_timezone: America/Chicago
+
+firewall_allowed_tcp_ports:
+  - "22"
+  - "25"
+  - "80"
+  - "443"
+  - "8080"
+
+jenkins_plugins:
+  - git
+  - ssh
+  - checkstyle
+  - cloverphp
+  - crap4j
+  - dry
+  - htmlpublisher
+  - jdepend
+  - plot
+  - pmd
+  - violations
+  - warnings
+  - xunit
+  - bitbucket
+  - greenballs
+  - thinbackup

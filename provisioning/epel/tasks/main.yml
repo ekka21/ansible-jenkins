@@ -1,0 +1,7 @@
+---
+
+- name: Copy the epel packages
+  copy: src=epel.repo dest=/etc/yum.repos.d/epel_ansible.repo
+
+- name: upgrade all packages
+  yum: name=* state=latest
